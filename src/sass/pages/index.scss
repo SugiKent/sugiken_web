@@ -1,0 +1,179 @@
+@import '../common/color';
+@import '../common/media_queries';
+
+@mixin title {
+  font-size: 22px;
+  color: $light-black;
+  line-height: 40px;
+  margin: 100px 15% 30px;
+  border-bottom: 1px solid $light-black;
+  text-indent: 1em;
+  letter-spacing: 0.01em;
+  @include max-screen($breakpoint-tablet) {
+    margin: 50px 5% 30px;
+    font-size: 18px;
+  }
+}
+
+@mixin content {
+  margin: 10px 15%;
+  font-size: 16px;
+  @include max-screen($breakpoint-tablet) {
+    margin: 10px 5%;
+    font-size: 14px;
+  }
+}
+
+@mixin noFloat {
+  @include max-screen($breakpoint-tablet) {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@mixin left {
+  float: left;
+  width: 45%;
+  margin: 0 0 0 5%;
+  @include noFloat;
+}
+
+@mixin right {
+  float: right;
+  width: 45%;
+  margin: 0 5% 0 0;
+  @include noFloat;
+}
+
+.Key {
+  width: 100%;
+  &__title {
+    @include title;
+    margin-top: 30px;
+    @include max-screen($breakpoint-tablet) {
+      margin-top: 0px;
+    }
+  }
+  &__content {
+    @include content;
+  }
+  &__left {
+    @include left;
+  }
+  &__right {
+    @include right;
+  }
+  &__image {
+    margin-top: 30px;
+    text-align: center;
+    @include max-screen($breakpoint-tablet) {
+      margin: 10px auto;
+    }
+    img {
+      width: 60%;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 30px;
+    @include max-screen($breakpoint-tablet) {
+      margin: 30px auto 0px;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.Career {
+  width: 100%;
+  &__title {
+    @include title;
+  }
+  &__content {
+    @include content;
+  }
+  &__left {
+    @include left;
+  }
+  &__right {
+    @include right;
+  }
+  &__image {
+    margin-top: 80px;
+    text-align: center;
+    @include max-screen($breakpoint-tablet) {
+      margin: 10px auto;
+    }
+    img {
+      width: 25%;
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+  &__list {
+    margin-top: 30px;
+    list-style: none;
+    @include max-screen($breakpoint-tablet) {
+      margin: 30px auto;
+    }
+  }
+  &__item {
+    line-height: 28px;
+  }
+}
+
+.Contact {
+  width: 100%;
+  margin-bottom: 150px;
+  &__title {
+    @include title;
+  }
+  &__content {
+    @include content;
+  }
+  &__subtitle {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__list {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 25%;
+    @include max-screen($breakpoint-tablet) {
+      width: 86%;
+      margin: 30px 7%;
+    }
+  }
+  &__item {
+    line-height: 30px;
+  }
+  &__bottom {
+    width: 90%;
+    margin: 80px auto;
+    text-align: center;
+  }
+  &__link {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 40px;
+    font-size: 28px;
+    border: 1px solid $light-black;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 1s;
+    @include max-screen($breakpoint-tablet) {
+      padding: 15px 30px;
+      font-size: 20px;
+    }
+    &:hover {
+      background: $light-black;
+      color: $white;
+    }
+  }
+}

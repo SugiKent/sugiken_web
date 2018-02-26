@@ -1,0 +1,46 @@
+{
+  "name": "sugiken_web",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp",
+    "server": "gulp server",
+    "test": "gulp test"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "flow"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.5",
+    "browserify": "^14.5.0",
+    "caniuse-db": "^1.0.30000764",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.8",
+    "babel-preset-flow": "^1.0.0",
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-flowtype": "^1.0.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^2.3.2",
+    "postcss-cssnext": "^2.9.0",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  }
+}

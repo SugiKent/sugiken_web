@@ -1,0 +1,86 @@
+extends ../layouts/application.pug
+
+block content
+  .Wrapper
+    .Key
+      .Key__title
+        h2
+          | Profile
+      .Key__content
+        .Key__left
+          .Key__image
+            img(src="images/sugiken.jpg")
+        .Key__right
+          p.Key__text
+            | 杉田賢人（Kento Sugita）
+            br
+            | 1995.08.31 愛知県生まれ
+            br
+            | 立教大学経営学部国際経営学科
+            br
+            br
+            | HTML/CSS/Javascript/Jquery
+            br
+            | Ruby/Rails/PHP/Wordpress
+            br
+            | Vagrant/AWS/Docker/Mysql
+          
+          p.Key__description
+            br
+            br
+            | webサービスの開発やグロースに興味があります。
+            br
+            | 1.5万/pv/月くらいの
+            a(href="http://www.rep-rikkyo.com/" target="_blank")
+              | 立教生向けwebサービス
+            | を開発・運営。
+            br
+            br
+            | 休日の過ごし方：ゲームとサイクリングと開発
+        .clearfix
+          
+    .Career
+      .Career__title
+        h2
+          | Career
+      .Career__content
+        .Career__left
+          .Career__image
+            img(src="images/rikkyo.png")
+            img(src="images/trunk.png")
+            img(src="images/jiraffe.jpeg")
+        .Career__right
+          ul.Career__list
+            li.Career__item
+              | 國學院高校
+              br
+              | ↓
+            li.Career__item
+              | 立教大学経営学部国際経営学科
+              br
+              | ↓
+            li.Career__item
+              | TRUNK（インターン・1年半）
+              br
+              | ジラフ（インターン・4ヶ月）
+        .clearfix
+
+    .Contact
+      .Contact__title
+        h2
+          | Contact
+      .Contact__content
+        h3.Contact__subtitle
+          | 杉田賢人があなたにできるかもしれないこと
+        ul.Contact__list
+          li.Contact__item
+            | webサービスや自社サイト開発
+          li.Contact__item
+            | 文系エンジニアを目指す学生の勉強の手助け
+          li.Contact__item
+            | 自転車での書類配達
+          li.Contact__item
+            | その他杉田賢人にやってほしいこと
+      .Contact__bottom
+        a.Contact__link(href="https://twitter.com/sugiken_bike" target="_blank")
+          | Feel free to DM!!
