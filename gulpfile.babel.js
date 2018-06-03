@@ -115,6 +115,7 @@ gulp.task('watch', () => {
 gulp.task('default', ['watch', 'build']);
 
 // $ yarn sever でこれが実行される。
+// http://localhost:3000
 gulp.task('server', ['default'], () => {
   const serverSetting = {
     server: {
